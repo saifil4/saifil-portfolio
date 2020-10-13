@@ -8,11 +8,12 @@ import { RouterModule, Routes } from '@angular/router';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { WheelForChangeComponent } from './wheel-for-change/wheel-for-change.component';
 import { FooterComponent } from './footer/footer.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 const appRoutes: Routes = [
-  { path: '', component: HomeComponent },
-  { path: 'about-me', component: AboutMeComponent },
-  { path: 'wheel-for-change', component: WheelForChangeComponent }
+  { path: '', component: HomeComponent, data: { animation: 'IsHome' }},
+  { path: 'about-me', component: AboutMeComponent, data: { animation: 'IsNotHome' } },
+  { path: 'wheel-for-change', component: WheelForChangeComponent, data: { animation: 'IsNotHome' } }
 ];
 
 @NgModule({
@@ -26,6 +27,7 @@ const appRoutes: Routes = [
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     RouterModule.forChild(appRoutes)
   ],
