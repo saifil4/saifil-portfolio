@@ -18,7 +18,7 @@ import {
   styleUrls: ['./app.component.sass'],
   animations: [
     trigger('routeAnimations', [
-      transition('* <=> *', [
+      transition('Home => AboutMe, Home => WOC', [
         query(':enter, :leave', [
           style({
             position: 'absolute',
@@ -28,17 +28,42 @@ import {
         ]),
         group([
           query(':enter', [
-            animate('2000ms ease', keyframes([
+            animate('1200ms ease', keyframes([
               style({ transform: 'scale(0) translateX(100%)', offset: 0 }),
               style({ transform: 'scale(0.5) translateX(25%)', offset: 0.3 }),
               style({ transform: 'scale(1) translateX(0%)', offset: 1 }),
             ])),
           ]),
           query(':leave', [
-            animate('2000ms ease', keyframes([
-              style({ transform: 'scale(1)', offset: 0 }),
-              style({ transform: 'scale(0.5) translateX(-25%) rotate(0)', offset: 0.35 }),
-              style({ opacity: 0, transform: 'translateX(-50%) rotate(-180deg) scale(6)', offset: 1 }),
+            animate('1200ms ease', keyframes([
+              style({ offset: 0 }),
+              style({ transform: 'translateX(-25%)', offset: 0.35 }),
+              style({ opacity: 0, transform: 'translateX(-50%)', offset: 1 }),
+            ])),
+          ])
+        ]),
+      ]),
+      transition('* => Home', [
+        query(':enter, :leave', [
+          style({
+            position: 'absolute',
+            left: 0,
+            width: '100%',
+          }),
+        ]),
+        group([
+          query(':enter', [
+            animate('1200ms ease', keyframes([
+              style({ offset: 0, transform: 'translateX(-100%)' }),
+              style({ transform: 'translateX(-25%)', offset: 0.35 }),
+              style({ opacity: 1, transform: 'translateX(0)', offset: 1 }),
+            ])),
+          ]),
+          query(':leave', [
+            animate('1200ms ease', keyframes([
+              style({ transform: 'scale(1) translateX(10)', offset: 0, opacity: 1 }),
+              style({ transform: 'scale(0.5) translateX(25%)', offset: 0.3, opacity: 0.3 }),
+              style({ transform: 'scale(0) translateX(100%)', offset: 1, opacity: 0 }),
             ])),
           ])
         ]),

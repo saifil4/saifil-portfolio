@@ -11,9 +11,9 @@ import { FooterComponent } from './footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 const appRoutes: Routes = [
-  { path: '', component: HomeComponent, data: { animation: 'IsHome' }},
-  { path: 'about-me', component: AboutMeComponent, data: { animation: 'IsNotHome' } },
-  { path: 'wheel-for-change', component: WheelForChangeComponent, data: { animation: 'IsNotHome' } }
+  { path: '', component: HomeComponent, data: { animation: 'Home' }},
+  { path: 'about-me', component: AboutMeComponent, data: { animation: 'AboutMe' } },
+  { path: 'wheel-for-change', component: WheelForChangeComponent, data: { animation: 'WOC' } }
 ];
 
 @NgModule({
