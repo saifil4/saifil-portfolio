@@ -1,6 +1,6 @@
 <div>
     <div class="container">
-         <div class="row">
+        <div class="row">
             <div class="col-md-1"></div>
             <div class="col-md-10">
                 <h1>My Work</h1>
@@ -8,23 +8,21 @@
             <div class="col-md-1"></div>
         </div>
     </div>
-    <div class="container py-5">
+    <div class="container py-5 my-2" *ngFor="let list of ProjectListData">
         <div class="row">
             <div class="col-md-1"></div>
             <div class="col-md-5 my-auto">
-                <img src="../../assets/images/woc-2.png" class="img-fluid">
+                <img src="{{list.ImageLink}}" class="img-fluid">
             </div>
             <div class="col-md-5 my-auto">
-                <h4>Designing the application process for an investment platform called Wheel
-                    For Change</h4>
+                <h4>{{list.Title}}</h4>
                 <p style="color: #505F79; font-style: italic; margin-bottom: 5px;font-weight: bold;">
-                    Group Course Project - 3 months</p>
-                <p>
-                    Wheel for change is an investment platform for Social Entrepreneurs where Potential investors
-                    could find and invest in projects The case study zooms in one of the parts of this project
-                    discussing about the design process for the application process for Social Entrepreneurs.
+                    {{list.ProjectType}}
                 </p>
-                <a routerLink="/wheel-for-change" routerLinkActive="active">
+                <p>
+                    {{list.Description}}
+                </p>
+                <a routerLink="{{list.RouterLink}}" routerLinkActive="active">
                     <button class="btn btn-dark">Learn more</button>
                 </a>
             </div>
