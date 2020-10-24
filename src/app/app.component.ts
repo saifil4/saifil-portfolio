@@ -73,7 +73,8 @@ import {
 export class AppComponent implements OnInit {
   title = 'saifil-portfolio';
 
-  public menus = [{ Name: 'Home', routerlink: '' }, { Name: 'About me', routerlink: '/about-me' }];
+  // public menus = [{ Name: 'Home', routerlink: '' }, { Name: 'About me', routerlink: '/about-me' }];
+  public menus = [{ Name: 'Home', routerlink: '' }];
 
   public MenuVMs: Array<Menu> = [];
 
