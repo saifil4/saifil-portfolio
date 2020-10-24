@@ -9,11 +9,13 @@ import { AboutMeComponent } from './about-me/about-me.component';
 import { WheelForChangeComponent } from './wheel-for-change/wheel-for-change.component';
 import { FooterComponent } from './footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { PlatoComponent } from './plato/plato.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent, data: { animation: 'Home' }},
   { path: 'about-me', component: AboutMeComponent, data: { animation: 'AboutMe' } },
-  { path: 'wheel-for-change', component: WheelForChangeComponent, data: { animation: 'WOC' } }
+  { path: 'wheel-for-change', component: WheelForChangeComponent, data: { animation: 'WOC' } },
+  { path: 'plato', component: PlatoComponent, data: { animation: 'Plato' } }
 ];
 
 @NgModule({
@@ -23,7 +25,8 @@ const appRoutes: Routes = [
     HomeComponent,
     AboutMeComponent,
     WheelForChangeComponent,
-    FooterComponent
+    FooterComponent,
+    PlatoComponent
   ],
   imports: [
     BrowserModule,

@@ -18,7 +18,7 @@ import {
   styleUrls: ['./app.component.sass'],
   animations: [
     trigger('routeAnimations', [
-      transition('Home => AboutMe, Home => WOC', [
+      transition('Home => AboutMe, Home => WOC, Home => Plato', [
         query(':enter, :leave', [
           style({
             position: 'absolute',

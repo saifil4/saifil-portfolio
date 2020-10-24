@@ -7,7 +7,7 @@ import { FooterComponent } from '../footer/footer.component';
 export class ProjectListComponent implements OnInit {
   public ProjectListData: Array<any> = [
     {
-      Title: 'Designing the application process for an investment platform called WheelFor Change',
+      Title: 'Wheel For Change: An investment platform for Social Entrprenuers',
       ProjectType: 'Group Course Project - 3 months',
       ImageLink: '../../assets/images/woc-cover.png',
       Description: `Wheel for change is an investment platform for Social Entrepreneurs where Potential investors
@@ -22,7 +22,7 @@ export class ProjectListComponent implements OnInit {
       ImageLink: '../../assets/images/plato-cover.png',
       Description: `Plato is an web app that helps users find learning content and resources relevant to a specific profession. It curates, recommends and provides links to already existing content such as videos, articles, books etc. based on user preferences.
       `,
-      RouterLink: '',
+      RouterLink: '/plato',
       Background: '#f3f4f7'
     }
   ];
