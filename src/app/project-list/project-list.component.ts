@@ -20,7 +20,7 @@ export class ProjectListComponent implements OnInit {
       Title: 'Plato: An e-learning platform',
       ProjectType: 'Course Project - 2 months',
       ImageLink: '../../assets/images/plato-cover.png',
-      Description: `Plato is an web app that helps users find learning content and resources relevant to a specific profession. It curates, recommends and provides links to already existing content such as videos, articles, books etc. based on user preferences.
+      Description: `Plato is a web app that helps users find learning content and resources relevant to a specific profession. It curates, recommends, and provides links to already existing youtube videos based on user preferences.
       `,
       RouterLink: '/plato',
       Background: '#f3f4f7'
