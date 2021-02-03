@@ -5,11 +5,8 @@ import { ProjectListComponent } from '../project-list/project-list.component';
   selector: 'app-home',
   templateUrl: './home.component.html'
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent {
   title = 'Home';
   constructor() { }
-
-  ngOnInit(): void {
-  }
 
 }
