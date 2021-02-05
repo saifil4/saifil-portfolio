@@ -10,18 +10,40 @@
     </div>
     <div class="container py-5 my-2">
         <div class="row">
-            <div class="col-md-4" *ngFor="let list of ProjectListData">
-                <img src="{{list.ImageLink}}" class="img-fluid">
-                <h5>{{list.Title}}</h5>
-                <p style="color: #505F79; font-style: italic; margin-bottom: 5px;font-weight: bold;">
-                    {{list.ProjectType}}
-                </p>
-                <!-- <p>
-                    {{list.Description}}
-                </p> -->
-                <a routerLink="{{list.RouterLink}}" routerLinkActive="active">
-                    <button class="btn btn-dark">Learn more</button>
-                </a>
+            <div class="col-md-4" *ngFor="let list of DevelopmentProjectList">
+                <div class="project-card">
+                    <img src="{{list.ImageLink}}" class="img-fluid">
+                    <h5>{{list.Title}}</h5>
+                    <p style="color: #505F79; font-style: italic; margin-bottom: 5px;font-weight: bold;">
+                        {{list.ProjectType}}
+                    </p>
+                    <!-- <p>
+                        {{list.Description}}
+                    </p> -->
+                    <a routerLink="{{list.RouterLink}}" routerLinkActive="active">
+                        <button class="btn btn-dark">Learn more</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container py-5 my-2">
+        <div class="row">
+            <div class="col-md-4" *ngFor="let list of UXProjectList">
+                <div class="project-card">
+                    <img src="{{list.ImageLink}}" class="img-fluid">
+                    <h5>{{list.Title}}</h5>
+                    <p style="color: #505F79; font-style: italic; margin-bottom: 5px;font-weight: bold;">
+                        {{list.ProjectType}}
+                    </p>
+                    <!-- <p>
+                        {{list.Description}}
+                    </p> -->
+                    <a routerLink="{{list.RouterLink}}" routerLinkActive="active">
+                        <button class="btn btn-dark">Learn more</button>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
