@@ -11,6 +11,7 @@ import { FooterComponent } from './footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PlatoComponent } from './plato/plato.component';
 import { AgileBoardComponent } from './agile-board/agile-board.component';
+import { CardComponent } from './card/card.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent, data: { animation: 'Home' } },
@@ -29,7 +30,8 @@ const appRoutes: Routes = [
     WheelForChangeComponent,
     FooterComponent,
     PlatoComponent,
-    AgileBoardComponent
+    AgileBoardComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,

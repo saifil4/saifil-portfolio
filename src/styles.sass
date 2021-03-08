@@ -1,11 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
 
+html
+    scroll-behavior: smooth
+
 h1,h2,h3
-    font-family: 'Lora', serif
+    font-weight: 700
     color: #172B4D
 
 h4,h5,h6
-    font-family: 'Lora', serif
     color: #172B4D
 
 .header-custom
@@ -44,11 +46,13 @@ h4,h5,h6
     padding-bottom: 10px
 
 .quote-text
-    color: #555
+    color: #6B778C
+    text-align: justify
 
 .quote-author
-    color: #333
+    color: #172B4D
     font-weight: bold
+    padding-top: 5px
 
 .button-red
     border: 1px solid #e84118
@@ -79,7 +83,6 @@ h4,h5,h6
     list-style: none
 
 p
-    font-family: 'Lato', sans-serif
     color: #42526E
 
 p b
@@ -122,8 +125,34 @@ p b
     opacity: 0.9
     color: white
 
-.project-card
+.project-item
     background: #ffffff
-    border-radius: 10px
-    padding: 15px
-    box-shadow: 0px 1px 4px 4px #e4e4e4
+    border-radius: 5px
+    padding: 10px
+    height: 100%
+    border-radius: 5px
+    border-radius: 5px
+    box-shadow: 12px 12px 24px #e6e6e6
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1)
+
+    .title
+        font-size: 18px
+        font-weight: bold
+        margin-top: 5px
+        margin-bottom: 5px
+
+    .sub-title
+        color: #505F79
+        font-style: italic
+        margin-bottom: 5px
+
+.case-study-cover-img
+    width: 100%
+    height: 70vh
+    background-size: contain
+    background-repeat: no-repeat
+    background-position: center
+
+.introduction
+    color: #172B4D
+    font-weight: 500

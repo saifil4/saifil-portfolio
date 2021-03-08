@@ -1,0 +1,9 @@
+<div 
+    *ngIf="Project" class="card"
+    (click)="OnCardClick()">
+    <img *ngIf="Project.ImageLink" src="{{Project.ImageLink}}" class="card-img-top" alt="...">
+    <div class="card-body">
+        <h6 class="card-title">{{Project.Title}}</h6>
+        <p class="card-subtitle mb-2 text-muted">{{Project.ProjectType}}</p>
+    </div>
+</div>

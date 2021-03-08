@@ -7,7 +7,24 @@ import { ProjectListComponent } from '../project-list/project-list.component';
 })
 export class AgileBoardComponent implements OnInit {
 
-  constructor() { }
+  
+  constructor() { 
+
+  }
+
+  public ProjectListData = [
+    {
+      Id: 1,
+      Name: '',
+      GitLink: '',
+      LiveLink: '',
+      ImageSrc: '',
+      Description: '',
+      TechStack: [
+
+      ]
+    }
+  ]
 
   ngOnInit(): void {
   }

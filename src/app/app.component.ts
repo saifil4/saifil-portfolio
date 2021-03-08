@@ -73,7 +73,7 @@ import {
 export class AppComponent implements OnInit {
   title = 'saifil-portfolio';
 
-  public menus = [{ Name: 'Home', routerlink: '' }, { Name: 'About me', routerlink: '/about-me' }];
+  public menus = [{ Name: 'Work' }, { Name: 'About me' }];
   //public menus = [{ Name: 'Home', routerlink: '' }];
 
   public MenuVMs: Array<Menu> = [];
@@ -95,9 +95,7 @@ export class AppComponent implements OnInit {
     this.menus.forEach(m => {
       menu = new Menu();
       menu.Linkname = m.Name;
-      menu.RouterLink = m.routerlink;
       const path = this.loc.path();
-      menu.status = (m.routerlink === path);
       this.MenuVMs.push(menu);
     });
   }
@@ -116,7 +114,6 @@ export class AppComponent implements OnInit {
 
 
 class Menu {
-  public RouterLink: string;
   public Linkname: string;
   public status = false;
 
