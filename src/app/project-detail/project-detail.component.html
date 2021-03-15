@@ -1,0 +1,59 @@
+<div class="container">
+    <div class="row" style="align-items: center;">
+        <div class="col-md-2"></div>
+        <div class="col-md-4">
+            <h3 class="my-3">{{Project.Name}}</h3>
+        </div>
+        <div class="col-md-4" style="text-align: right;">
+            <a href="{{Project.LiveLink}}" target="blank">
+                <button class="btn btn-md demo-btn mr-2"><i class="fas fa-link mr-2"></i>Live</button>
+            </a>
+            <a href="{{Project.GitLink}}" target="blank">
+                <button class="btn btn-md git-btn"><i class="fab fa-github mr-2"></i>GitHub</button>
+            </a>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <img src="{{Project.ImageSrc}}" class="img-fluid">
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+</div>
+
+<section class="my-3">
+    <div class="container my-3">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <p>
+                    {{Project.Description}}
+                </p>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+</section>
+
+<app-skills [Skills]="Project.TechStack" [IsHomePage]="false"></app-skills>
+
+<section class="my-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <h5 class="mb-3">Browse Other Projects</h5>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8 p-0">
+                <app-project-list></app-project-list>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+</section>

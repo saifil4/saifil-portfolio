@@ -1,59 +1,7 @@
-<div class="py-5" style="background: #f4f5f7;">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h3>My Work</h3>
-            </div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 mb-3" *ngFor="let project of DevelopmentProjectList">
+            <app-card [Project]="project"></app-card>
         </div>
     </div>
-    <div class="container py-3">
-        <div class="row">
-            <div class="col-md-12">
-                <h5>Development</h5>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4 mb-3" *ngFor="let project of DevelopmentProjectList">
-                <app-card [Project]="project"></app-card>
-            </div>
-        </div>
-    </div>
-
-    <div class="container py-3">
-        <div class="row">
-            <div class="col-md-12">
-                <h5>Currently Working On</h5>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4 " *ngFor="let project of WIPList">
-                <app-card [Project]="project"></app-card>
-            </div>
-        </div>
-    </div>
-
-    <!-- <div class="container py-3">
-        <div class="row">
-            <div class="col-md-12">
-                <h5>UI/UX Design</h5>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4" *ngFor="let list of UXProjectList">
-                <div class="project-item">
-                    <img src="{{list.ImageLink}}" class="img-fluid">
-                    <p class="title">{{list.Title}}</p>
-                    <p class="sub-title">
-                        {{list.ProjectType}}
-                    </p>
-                    <p>
-                        {{list.Description}}
-                    </p>
-                    <a routerLink="{{list.RouterLink}}" routerLinkActive="active">
-                        Learn more
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div> -->
 </div>

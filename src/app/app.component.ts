@@ -16,59 +16,59 @@ import {
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.sass'],
-  animations: [
-    trigger('routeAnimations', [
-      transition('Home => AboutMe, Home => WOC, Home => Plato', [
-        query(':enter, :leave', [
-          style({
-            position: 'absolute',
-            left: 0,
-            width: '100%',
-          }),
-        ]),
-        group([
-          query(':enter', [
-            animate('1200ms ease', keyframes([
-              style({ transform: 'scale(0) translateX(100%)', offset: 0 }),
-              style({ transform: 'scale(0.5) translateX(25%)', offset: 0.3 }),
-              style({ transform: 'scale(1) translateX(0%)', offset: 1 }),
-            ])),
-          ]),
-          query(':leave', [
-            animate('1200ms ease', keyframes([
-              style({ offset: 0 }),
-              style({ transform: 'translateX(-25%)', offset: 0.35 }),
-              style({ opacity: 0, transform: 'translateX(-50%)', offset: 1 }),
-            ])),
-          ])
-        ]),
-      ]),
-      transition('* => Home', [
-        query(':enter, :leave', [
-          style({
-            position: 'absolute',
-            left: 0,
-            width: '100%',
-          }),
-        ]),
-        group([
-          query(':enter', [
-            animate('1200ms ease', keyframes([
-              style({ offset: 0, transform: 'translateX(-100%)' }),
-              style({ transform: 'translateX(-25%)', offset: 0.35 }),
-              style({ opacity: 1, transform: 'translateX(0)', offset: 1 }),
-            ])),
-          ]),
-          query(':leave', [
-            animate('1200ms ease', keyframes([
-              style({ transform: 'scale(1) translateX(10)', offset: 0, opacity: 1 }),
-              style({ transform: 'scale(0.5) translateX(25%)', offset: 0.3, opacity: 0.3 }),
-              style({ transform: 'scale(0) translateX(100%)', offset: 1, opacity: 0 }),
-            ])),
-          ])
-        ]),
-      ])
-    ])]
+  // animations: [
+  //   trigger('routeAnimations', [
+  //     transition('Home => AboutMe, Home => WOC, Home => Plato', [
+  //       query(':enter, :leave', [
+  //         style({
+  //           position: 'absolute',
+  //           left: 0,
+  //           width: '100%',
+  //         }),
+  //       ]),
+  //       group([
+  //         query(':enter', [
+  //           animate('1200ms ease', keyframes([
+  //             style({ transform: 'scale(0) translateX(100%)', offset: 0 }),
+  //             style({ transform: 'scale(0.5) translateX(25%)', offset: 0.3 }),
+  //             style({ transform: 'scale(1) translateX(0%)', offset: 1 }),
+  //           ])),
+  //         ]),
+  //         query(':leave', [
+  //           animate('1200ms ease', keyframes([
+  //             style({ offset: 0 }),
+  //             style({ transform: 'translateX(-25%)', offset: 0.35 }),
+  //             style({ opacity: 0, transform: 'translateX(-50%)', offset: 1 }),
+  //           ])),
+  //         ])
+  //       ]),
+  //     ]),
+  //     transition('* => Home', [
+  //       query(':enter, :leave', [
+  //         style({
+  //           position: 'absolute',
+  //           left: 0,
+  //           width: '100%',
+  //         }),
+  //       ]),
+  //       group([
+  //         query(':enter', [
+  //           animate('1200ms ease', keyframes([
+  //             style({ offset: 0, transform: 'translateX(-100%)' }),
+  //             style({ transform: 'translateX(-25%)', offset: 0.35 }),
+  //             style({ opacity: 1, transform: 'translateX(0)', offset: 1 }),
+  //           ])),
+  //         ]),
+  //         query(':leave', [
+  //           animate('1200ms ease', keyframes([
+  //             style({ transform: 'scale(1) translateX(10)', offset: 0, opacity: 1 }),
+  //             style({ transform: 'scale(0.5) translateX(25%)', offset: 0.3, opacity: 0.3 }),
+  //             style({ transform: 'scale(0) translateX(100%)', offset: 1, opacity: 0 }),
+  //           ])),
+  //         ])
+  //       ]),
+  //     ])
+  //   ])]
 })
 export class AppComponent implements OnInit {
   title = 'saifil-portfolio';

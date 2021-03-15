@@ -10,15 +10,16 @@ import { WheelForChangeComponent } from './wheel-for-change/wheel-for-change.com
 import { FooterComponent } from './footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PlatoComponent } from './plato/plato.component';
-import { AgileBoardComponent } from './agile-board/agile-board.component';
+import { ProjectDetailComponent } from './project-detail/project-detail.component';
 import { CardComponent } from './card/card.component';
+import { SkillsComponent } from './skills/skills.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent, data: { animation: 'Home' } },
   { path: 'about-me', component: AboutMeComponent, data: { animation: 'AboutMe' } },
   { path: 'wheel-for-change', component: WheelForChangeComponent, data: { animation: 'WOC' } },
   { path: 'plato', component: PlatoComponent, data: { animation: 'Plato' } },
-  { path: 'agile-board', component: AgileBoardComponent, data: { animation: 'AgileBoard' } }
+  { path: 'project-detail', component: ProjectDetailComponent, data: { animation: 'AgileBoard' } }
 ];
 
 @NgModule({
@@ -30,8 +31,9 @@ const appRoutes: Routes = [
     WheelForChangeComponent,
     FooterComponent,
     PlatoComponent,
-    AgileBoardComponent,
-    CardComponent
+    ProjectDetailComponent,
+    CardComponent,
+    SkillsComponent
   ],
   imports: [
     BrowserModule,

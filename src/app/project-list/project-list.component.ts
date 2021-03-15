@@ -32,22 +32,22 @@ export class ProjectListComponent implements OnInit {
   public DevelopmentProjectList: Array<any> = [
     {
       Id: 1,
-      Name: 'AnimeDB',
+      Name: 'Agile-board',
       Title: 'Agile board',
       ProjectType: 'Personal Project - Front End Development',
-      ImageLink: '../../assets/images/agile-board/poster-image.png',
+      ImageLink: '../../assets/images/agile-board/poster-image.svg',
     },
     {
       Id: 2,
-      Name: 'AnimeDB',
+      Name: 'Covid-Tracker',
       Title: 'Covid Tracker',
       ProjectType: 'Personal Project - Front End Development',
-      ImageLink: '../../assets/images/covid-tracker/poster-image.png',
+      ImageLink: '../../assets/images/covid-tracker/poster-image.svg',
       Background: '#f3f4f7'
     },
     {
       Id: 3,
-      Name: 'AnimeDB',
+      Name: 'Portfolio-Website',
       Title: 'Portfolio Website',
       ProjectType: 'Personal Project - Front End Development',
       ImageLink: '../../assets/images/portfolio/poster-image.png'
@@ -60,20 +60,21 @@ export class ProjectListComponent implements OnInit {
       Name: 'AnimeDB',
       Title: 'Chess Like Game',
       ProjectType: 'Personal Project - Front End Development',
-      ImageLink: null
+      ImageLink: '../../assets/images/chess/poster-image.svg'
     },
     {
       Id: 5,
       Name: 'AnimeDB',
-      Title: 'AnimeDB: Find Details of your favourite Anime',
+      Title: 'AnimeDB: Explore your favourite Animes',
       ProjectType: 'Personal Project - Front End Development',
-      ImageLink: null
+      ImageLink: '../../assets/images/animedb/poster-image.svg'
     }
   ];
   
   constructor() { }
 
   ngOnInit(): void {
+    
   }
 
 }

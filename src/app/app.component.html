@@ -1,30 +1,43 @@
+<nav class="navbar fixed-top navbar-expand-lg navbar-light header-custom">
+  <div class="container">
+    <a routerLink="" routerLinkActive="active" class="navbar-brand" href="#">
+      <img src="../assets/images/logo.png" width="auto" height="25" alt="">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-light header-custom">
-      <div class="container">
-        <a routerLink="" routerLinkActive="active" class="navbar-brand" href="#">
-          <img src="../assets/images/logo.png" width="auto" height="25" alt="">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a href="#footer" class="nav-link header-link">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a href="#about-me" class="nav-link header-link">About me</a>
+        </li>
+        <li class="nav-item">
+          <a href="https://github.com/saifil4" target="blank" class="nav-link header-link">
+            <i class="fab fa-github mr-1"></i>GitHub
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="https://www.linkedin.com/in/saifil-momin/" target="blank" class="nav-link header-link">
+            <i class="fab fa-linkedin mr-1"></i>LinkedIn
+          </a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <a href="../assets/docs/Saifil Momin Resume.pdf" download="Saifil Momin Resume.pdf" class="btn btn-primary" style="background-color: #5222D0;" role="button" data-bs-toggle="button">
+          Resume<i class="fas fa-download ml-2"></i>
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a href="#footer" class="nav-link">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a href="#about-me" class="nav-link">About me</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
-  <main [@routeAnimations]="prepareRoute(outlet)">
-    <router-outlet #outlet="outlet"></router-outlet>
-  </main>
-  
+      </form>
+    </div>
+  </div>
+</nav>
+<main>
+  <router-outlet></router-outlet>
+</main>
+<footer>
+  <app-footer></app-footer>
+</footer>

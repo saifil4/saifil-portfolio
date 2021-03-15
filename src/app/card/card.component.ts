@@ -9,12 +9,10 @@ export class CardComponent {
   constructor(private router: Router) {
   }
 
-  public SelectedCardId: number = null;
-
   @Input() Project: any;
 
   public OnCardClick() {
-    this.router.navigate(['/agile-board'], { queryParams: { name: this.Project.Name, id: this.Project.Id } });
+    this.router.navigate(['/project-detail'], { queryParams: { name: this.Project.Name, id: this.Project.Id } });
   }
 
 }

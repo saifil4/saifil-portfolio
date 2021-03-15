@@ -1,24 +1,33 @@
 <section>
     <div class="container my-3">
         <div class="row">
-            <div class="col-md-6 my-auto">
-                <h2 class="introduction">Hello, I am Saifil</h2>
-                <h1 style="color: #5222D0;">
-                    Developer and Designer based in Toronto
+            <div class="col-md-6 introduction">
+                <!-- <h1>
+                    Hello, I am Saifil.<br /> <span style="color: #5222D0;">Front End Developer</span> and <span
+                        style="color: #ec615b;">UX Designer</span> based in Toronto
+                </h1> -->
+                <h1>
+                    Hello, I am Saifil.<br /> <span style="color: #5222D0;">Front End Developer</span> based in Toronto
                 </h1>
-                <p style="font-size: 18px;color: #505F79;">
-                  My expertise lies in creating beautiful and functional interfaces
-                </p>
             </div>
             <div class="col-md-6 my-auto text-center">
-                <img class="img-fluid" src="../../assets/images/programming.png" />
+                <img class="img-fluid" alt="cover image of person coding" src="../../assets/images/programming.svg" />
             </div>
         </div>
     </div>
 </section>
 
-<app-project-list></app-project-list>
+<section class="my-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="mb-3">Projects</h3>
+            </div>
+        </div>
+    </div>
+    <app-project-list></app-project-list>
+</section>
+
+
+<app-skills [Skills]="Skills" [IsHomePage]="true"></app-skills>
 <app-about-me></app-about-me>
-<footer>
-    <app-footer></app-footer>
-</footer>
