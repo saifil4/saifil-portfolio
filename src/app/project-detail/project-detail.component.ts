@@ -8,24 +8,25 @@ import { SkillsComponent } from '../skills/skills.component';
 })
 export class ProjectDetailComponent implements OnInit {
 
-  public ProjectId: number = null;
   public Project: any = null;
 
   constructor(private route: ActivatedRoute) {
-    this.getQueryParams();
-    this.setProject();
-
+    window.scroll(0, 0);
   }
 
-  private setProject() {
-    this.Project = this.ProjectListData.find(project => project.Id === this.ProjectId);
-    console.log(this.Project)
+  ngOnInit(): void {
+    this.getQueryParams();
   }
 
   private getQueryParams() {
     this.route.queryParams.subscribe(params => {
-      this.ProjectId = parseInt(params['id']);
+      this.setProject(parseInt(params['id']));
+      window.scroll(0, 0);
     });
+  }
+
+  private setProject(projectid: number) {
+    this.Project = this.ProjectListData.find(project => project.Id === projectid);
   }
 
   public ProjectListData = [
@@ -35,7 +36,7 @@ export class ProjectDetailComponent implements OnInit {
       GitLink: 'https://github.com/saifil4/agile-board',
       LiveLink: 'https://serene-heyrovsky-9dffc5.netlify.app/',
       ImageSrc: '../../assets/images/agile-board/poster-image.svg',
-      Description: `Front End implementation of a Scrum board built with React and Redux where tasks can prioritize and labeled based on user's requirements.`,
+      Description: `Front End implementation of a Scrum board built with React and Redux where tasks can be prioritized and labeled based on user's requirements.`,
       TechStack: [
         { Name: 'React', Icon: '../../assets/images/skills/react.png' },
         { Name: 'Redux', Icon: '../../assets/images/skills/redux.png' },
@@ -43,7 +44,7 @@ export class ProjectDetailComponent implements OnInit {
         { Name: 'CSS', Icon: '../../assets/images/skills/css.png' },
         { Name: 'JavaScript', Icon: '../../assets/images/skills/javascript.png' },
         { Name: 'BootStrap', Icon: '../../assets/images/skills/bootstrap.png' },
-        { Name: 'MySQL', Icon: '../../assets/images/skills/mysql.png' }
+        { Name: 'React Beautiful dnd', Icon: null }
       ]
     },
     {
@@ -52,29 +53,29 @@ export class ProjectDetailComponent implements OnInit {
       GitLink: 'https://github.com/saifil4/covid-tracker',
       LiveLink: 'https://blissful-kalam-51fe7e.netlify.app/',
       ImageSrc: '../../assets/images/covid-tracker/poster-image.svg',
-      Description: `Integrated disease.sh API to create a COVID-19 tracker to visualize global stats and vaccination efforts in different parts of the world.`,
+      Description: `Created a COVID-19 tracker by integrating disease.sh API to visualize global stats and vaccination efforts in different parts of the world.`,
       TechStack: [
         { Name: 'React', Icon: '../../assets/images/skills/react.png' },
-        { Name: 'Redux', Icon: '../../assets/images/skills/redux.png' },
         { Name: 'HTML', Icon: '../../assets/images/skills/html.png' },
         { Name: 'CSS', Icon: '../../assets/images/skills/css.png' },
         { Name: 'JavaScript', Icon: '../../assets/images/skills/javascript.png' },
         { Name: 'BootStrap', Icon: '../../assets/images/skills/bootstrap.png' },
-        { Name: 'MySQL', Icon: '../../assets/images/skills/mysql.png' }
+        { Name: 'Leaflet JS', Icon: null },
+        { Name: 'Disease.sh API', Icon: null }
       ]
     },
     {
       Id: 3,
-      Name: 'Portfolio',
-      GitLink: '',
+      Name: 'Portfolio Website',
+      GitLink: 'https://github.com/saifil4/saifil-portfolio',
       LiveLink: 'http://saifilmomin.com/',
-      ImageSrc: '../../assets/images/portfolio/poster-image.png',
+      ImageSrc: '../../assets/images/portfolio/poster-image.svg',
       Description: `A website to demonstrate my skills and projects and a medium for people to view my projects and contact me to collaborate on projects.`,
       TechStack: [
-        { Name: 'React', Icon: '../../assets/images/skills/angular.png' },
+        { Name: 'Angular', Icon: '../../assets/images/skills/angular.png' },
         { Name: 'HTML', Icon: '../../assets/images/skills/html.png' },
         { Name: 'CSS', Icon: '../../assets/images/skills/css.png' },
-        { Name: 'JavaScript', Icon: '../../assets/images/skills/typescript.png' },
+        { Name: 'TypeScript', Icon: '../../assets/images/skills/typescript.png' },
         { Name: 'BootStrap', Icon: '../../assets/images/skills/bootstrap.png' }
       ]
     },
@@ -92,7 +93,6 @@ export class ProjectDetailComponent implements OnInit {
         { Name: 'CSS', Icon: '../../assets/images/skills/css.png' },
         { Name: 'JavaScript', Icon: '../../assets/images/skills/javascript.png' },
         { Name: 'BootStrap', Icon: '../../assets/images/skills/bootstrap.png' },
-        { Name: 'MySQL', Icon: '../../assets/images/skills/mysql.png' }
       ]
     },
     {
@@ -109,12 +109,8 @@ export class ProjectDetailComponent implements OnInit {
         { Name: 'CSS', Icon: '../../assets/images/skills/css.png' },
         { Name: 'JavaScript', Icon: '../../assets/images/skills/javascript.png' },
         { Name: 'BootStrap', Icon: '../../assets/images/skills/bootstrap.png' },
-        { Name: 'MySQL', Icon: '../../assets/images/skills/mysql.png' }
       ]
     }
   ]
-
-  ngOnInit(): void {
-  }
 
 }

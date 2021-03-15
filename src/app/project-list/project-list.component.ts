@@ -34,14 +34,14 @@ export class ProjectListComponent implements OnInit {
       Id: 1,
       Name: 'Agile-board',
       Title: 'Agile board',
-      ProjectType: 'Personal Project - Front End Development',
+      ProjectType: 'React, Redux and Javascript',
       ImageLink: '../../assets/images/agile-board/poster-image.svg',
     },
     {
       Id: 2,
       Name: 'Covid-Tracker',
       Title: 'Covid Tracker',
-      ProjectType: 'Personal Project - Front End Development',
+      ProjectType: 'React and JavaScript',
       ImageLink: '../../assets/images/covid-tracker/poster-image.svg',
       Background: '#f3f4f7'
     },
@@ -49,8 +49,8 @@ export class ProjectListComponent implements OnInit {
       Id: 3,
       Name: 'Portfolio-Website',
       Title: 'Portfolio Website',
-      ProjectType: 'Personal Project - Front End Development',
-      ImageLink: '../../assets/images/portfolio/poster-image.png'
+      ProjectType: 'Angular and TypeScript',
+      ImageLink: '../../assets/images/portfolio/poster-image.svg'
     }
   ];
 
