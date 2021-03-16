@@ -6,7 +6,7 @@ import { ProjectListComponent } from './project-list/project-list.component';
 import { HomeComponent } from './home/home.component';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutMeComponent } from './about-me/about-me.component';
-import { WheelForChangeComponent } from './wheel-for-change/wheel-for-change.component';
+import { WheelForChangeComponent } from './ux-projects/wheel-for-change/wheel-for-change.component';
 import { FooterComponent } from './footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PlatoComponent } from './plato/plato.component';
