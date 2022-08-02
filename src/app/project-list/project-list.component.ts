@@ -59,15 +59,15 @@ export class ProjectListComponent implements OnInit {
       Id: 4,
       Name: 'react-portfolio',
       Title: 'React Portfolio',
-      ProjectType: 'Personal Project - Front End Development',
+      ProjectType: null,
       ImageLink: '../../assets/images/portfolio-react/splash.png'
     },
     {
       Id: 5,
-      Name: 'AnimeDB',
-      Title: 'AnimeDB: Explore your favourite Animes',
-      ProjectType: 'Personal Project - Front End Development',
-      ImageLink: '../../assets/images/animedb/poster-image.svg'
+      Name: 'Lines and Boxes',
+      Title: 'Lines and Boxes: A fun little game you can play with your friends',
+      ProjectType: null,
+      ImageLink: '../../assets/images/lines-and-boxes/splash.png'
     }
   ];
   

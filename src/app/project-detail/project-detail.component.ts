@@ -110,10 +110,10 @@ export class ProjectDetailComponent implements OnInit {
     {
       Id: 5,
       Name: 'Lines and Boxes',
-      GitLink: '',
-      LiveLink: '',
-      ImageSrc: '../../assets/images/animedb/poster-image.svg',
-      Description: '',
+      GitLink: 'https://github.com/saifil4/dotsandboxes',
+      LiveLink: 'https://dotsandboxes.vercel.app/',
+      ImageSrc: '../../assets/images/lines-and-boxes/splash.png',
+      Description: 'Lines and boxes is a fun little game you can play with your friends. It comprises of lines you can click to enable them, and the line which closes a box is considered captured which awards 1 point to the player',
       TechStack: [
         { Name: 'React', Icon: '../../assets/images/skills/react.png' },
         { Name: 'Redux', Icon: '../../assets/images/skills/redux.png' },
