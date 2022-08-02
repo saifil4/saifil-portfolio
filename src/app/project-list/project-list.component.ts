@@ -7,25 +7,25 @@ import { CardComponent } from '../card/card.component'
 })
 export class ProjectListComponent implements OnInit {
   public UXProjectList: Array<any> = [
-    // {
-    //   Title: 'Wheel For Change: An investment platform for Social Entrprenuers',
-    //   ProjectType: 'Group Course Project - 3 months',
-    //   ImageLink: '../../assets/images/woc-cover.png',
-    //   Description: `Wheel for change is an investment platform for Social Entrepreneurs where Potential investors
-    //   could find and invest in projects The case study zooms in one of the parts of this project
-    //   discussing about the design process for the application process for Social Entrepreneurs.`,
-    //   RouterLink: '/wheel-for-change',
-    //   Background: '#f3f4f7'
-    // },
-    // {
-    //   Title: 'Plato: An e-learning platform',
-    //   ProjectType: 'Course Project - 2 months',
-    //   ImageLink: '../../assets/images/plato-cover.png',
-    //   Description: `Plato is a web app that helps users find learning content and resources relevant to a specific profession. It curates, recommends, and provides links to already existing youtube videos based on user preferences.
-    //   `,
-    //   RouterLink: '/plato',
-    //   Background: '#f3f4f7'
-    // }
+    {
+      Title: 'Wheel For Change: An investment platform for Social Entrprenuers',
+      ProjectType: 'Group Course Project - 3 months',
+      ImageLink: '../../assets/images/woc-cover.png',
+      Description: `Wheel for change is an investment platform for Social Entrepreneurs where Potential investors
+      could find and invest in projects The case study zooms in one of the parts of this project
+      discussing about the design process for the application process for Social Entrepreneurs.`,
+      RouterLink: '/wheel-for-change',
+      Background: '#f3f4f7'
+    },
+    {
+      Title: 'Plato: An e-learning platform',
+      ProjectType: 'Course Project - 2 months',
+      ImageLink: '../../assets/images/plato-cover.png',
+      Description: `Plato is a web app that helps users find learning content and resources relevant to a specific profession. It curates, recommends, and provides links to already existing youtube videos based on user preferences.
+      `,
+      RouterLink: '/plato',
+      Background: '#f3f4f7'
+    }
   ];
 
 
@@ -57,10 +57,10 @@ export class ProjectListComponent implements OnInit {
   public WIPList: Array<any> = [
     {
       Id: 4,
-      Name: 'AnimeDB',
-      Title: 'Chess Like Game',
+      Name: 'react-portfolio',
+      Title: 'React Portfolio',
       ProjectType: 'Personal Project - Front End Development',
-      ImageLink: '../../assets/images/chess/poster-image.svg'
+      ImageLink: '../../assets/images/portfolio-react/splash.png'
     },
     {
       Id: 5,

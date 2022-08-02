@@ -4,10 +4,9 @@ import { ProjectListComponent } from '../project-list/project-list.component';
 import { SkillsComponent } from '../skills/skills.component';
 @Component({
   selector: 'app-project-detail',
-  templateUrl: './project-detail.component.html'
+  templateUrl: './project-detail.component.html',
 })
 export class ProjectDetailComponent implements OnInit {
-
   public Project: any = null;
 
   constructor(private route: ActivatedRoute) {
@@ -19,14 +18,16 @@ export class ProjectDetailComponent implements OnInit {
   }
 
   private getQueryParams() {
-    this.route.queryParams.subscribe(params => {
+    this.route.queryParams.subscribe((params) => {
       this.setProject(parseInt(params['id']));
       window.scroll(0, 0);
     });
   }
 
   private setProject(projectid: number) {
-    this.Project = this.ProjectListData.find(project => project.Id === projectid);
+    this.Project = this.ProjectListData.find(
+      (project) => project.Id === projectid
+    );
   }
 
   public ProjectListData = [
@@ -42,27 +43,33 @@ export class ProjectDetailComponent implements OnInit {
         { Name: 'Redux', Icon: '../../assets/images/skills/redux.png' },
         { Name: 'HTML', Icon: '../../assets/images/skills/html.png' },
         { Name: 'CSS', Icon: '../../assets/images/skills/css.png' },
-        { Name: 'JavaScript', Icon: '../../assets/images/skills/javascript.png' },
+        {
+          Name: 'JavaScript',
+          Icon: '../../assets/images/skills/javascript.png',
+        },
         { Name: 'BootStrap', Icon: '../../assets/images/skills/bootstrap.png' },
-        { Name: 'React Beautiful dnd', Icon: null }
-      ]
+        { Name: 'React Beautiful dnd', Icon: null },
+      ],
     },
     {
       Id: 2,
       Name: 'Covid-Tracker',
       GitLink: 'https://github.com/saifil4/covid-tracker',
-      LiveLink: 'https://blissful-kalam-51fe7e.netlify.app/',
+      LiveLink: 'https://covid-tracker-jade-nu.vercel.app/',
       ImageSrc: '../../assets/images/covid-tracker/poster-image.svg',
       Description: `Created a COVID-19 tracker by integrating disease.sh API to visualize global stats and vaccination efforts in different parts of the world.`,
       TechStack: [
         { Name: 'React', Icon: '../../assets/images/skills/react.png' },
         { Name: 'HTML', Icon: '../../assets/images/skills/html.png' },
         { Name: 'CSS', Icon: '../../assets/images/skills/css.png' },
-        { Name: 'JavaScript', Icon: '../../assets/images/skills/javascript.png' },
+        {
+          Name: 'JavaScript',
+          Icon: '../../assets/images/skills/javascript.png',
+        },
         { Name: 'BootStrap', Icon: '../../assets/images/skills/bootstrap.png' },
         { Name: 'Leaflet JS', Icon: null },
-        { Name: 'Disease.sh API', Icon: null }
-      ]
+        { Name: 'Disease.sh API', Icon: null },
+      ],
     },
     {
       Id: 3,
@@ -75,29 +82,34 @@ export class ProjectDetailComponent implements OnInit {
         { Name: 'Angular', Icon: '../../assets/images/skills/angular.png' },
         { Name: 'HTML', Icon: '../../assets/images/skills/html.png' },
         { Name: 'CSS', Icon: '../../assets/images/skills/css.png' },
-        { Name: 'TypeScript', Icon: '../../assets/images/skills/typescript.png' },
-        { Name: 'BootStrap', Icon: '../../assets/images/skills/bootstrap.png' }
-      ]
+        {
+          Name: 'TypeScript',
+          Icon: '../../assets/images/skills/typescript.png',
+        },
+        { Name: 'BootStrap', Icon: '../../assets/images/skills/bootstrap.png' },
+      ],
     },
     {
       Id: 4,
-      Name: 'Chess Like Game',
-      GitLink: '',
-      LiveLink: '',
-      ImageSrc: '../../assets/images/chess/poster-image.svg',
-      Description: '',
+      Name: 'React Portfolio',
+      GitLink: 'https://github.com/saifil4/my-portfolio-react',
+      LiveLink: 'https://my-portfolio-react-oec7j58mw-saifil4.vercel.app/',
+      ImageSrc: '../../assets/images/portfolio-react/splash.png',
+      Description:
+        'I built my first portfolio back in 2020 in Angular. Since then, I have learned a lot of things and improved my skills drastically. So I am currently working on migrating my old portfolio to React, while refreshing the UI making it more clean and adding some animations.',
       TechStack: [
         { Name: 'React', Icon: '../../assets/images/skills/react.png' },
-        { Name: 'Redux', Icon: '../../assets/images/skills/redux.png' },
-        { Name: 'HTML', Icon: '../../assets/images/skills/html.png' },
-        { Name: 'CSS', Icon: '../../assets/images/skills/css.png' },
-        { Name: 'JavaScript', Icon: '../../assets/images/skills/javascript.png' },
-        { Name: 'BootStrap', Icon: '../../assets/images/skills/bootstrap.png' },
-      ]
+        { Name: 'Tailwind', Icon: '../../assets/images/skills/tailwind.svg' },
+        {
+          Name: 'JavaScript',
+          Icon: '../../assets/images/skills/javascript.png',
+        },
+        { Name: 'Recoil', Icon: '../../assets/images/skills/recoil.svg' },
+      ],
     },
     {
       Id: 5,
-      Name: 'AnimeDB',
+      Name: 'Lines and Boxes',
       GitLink: '',
       LiveLink: '',
       ImageSrc: '../../assets/images/animedb/poster-image.svg',
@@ -107,10 +119,12 @@ export class ProjectDetailComponent implements OnInit {
         { Name: 'Redux', Icon: '../../assets/images/skills/redux.png' },
         { Name: 'HTML', Icon: '../../assets/images/skills/html.png' },
         { Name: 'CSS', Icon: '../../assets/images/skills/css.png' },
-        { Name: 'JavaScript', Icon: '../../assets/images/skills/javascript.png' },
+        {
+          Name: 'JavaScript',
+          Icon: '../../assets/images/skills/javascript.png',
+        },
         { Name: 'BootStrap', Icon: '../../assets/images/skills/bootstrap.png' },
-      ]
-    }
-  ]
-
+      ],
+    },
+  ];
 }

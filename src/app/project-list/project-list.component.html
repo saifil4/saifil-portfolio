@@ -1,7 +1,14 @@
 <div class="container">
-    <div class="row">
-        <div class="col-md-4 mb-3" *ngFor="let project of DevelopmentProjectList">
-            <app-card [Project]="project"></app-card>
-        </div>
+  <h6 class="project-type">Active</h6>
+  <div class="row">
+    <div class="col-md-4 mb-3" *ngFor="let project of DevelopmentProjectList">
+      <app-card [Project]="project"></app-card>
     </div>
+  </div>
+  <h6 class="project-type">In progress</h6>
+  <div class="row">
+    <div class="col-md-4 mb-3" *ngFor="let project of WIPList">
+      <app-card [Project]="project"></app-card>
+    </div>
+  </div>
 </div>
