@@ -56,7 +56,7 @@ export class ProjectDetailComponent implements OnInit {
       Name: 'Covid-Tracker',
       GitLink: 'https://github.com/saifil4/covid-tracker',
       LiveLink: 'https://covid-tracker-jade-nu.vercel.app/',
-      ImageSrc: '../../assets/images/covid-tracker/poster-image.svg',
+      ImageSrc: '../../assets/images/covid-tracker/splash.png',
       Description: `Created a COVID-19 tracker by integrating disease.sh API to visualize global stats and vaccination efforts in different parts of the world.`,
       TechStack: [
         { Name: 'React', Icon: '../../assets/images/skills/react.png' },

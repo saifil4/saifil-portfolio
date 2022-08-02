@@ -42,7 +42,7 @@ export class ProjectListComponent implements OnInit {
       Name: 'Covid-Tracker',
       Title: 'Covid Tracker',
       ProjectType: 'React and JavaScript',
-      ImageLink: '../../assets/images/covid-tracker/poster-image.svg',
+      ImageLink: '../../assets/images/covid-tracker/splash.png',
       Background: '#f3f4f7'
     },
     {
